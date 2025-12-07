@@ -1,89 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Eye Repair Routine</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Eye Repair Routine</title>
 
-    <!-- Link to external CSS -->
-    <link rel="stylesheet" href="sing.css">
+  <!-- Link to external CSS -->
+  <link rel="stylesheet" href="sing.css">
 
-    <!-- Icons -->
-    <link rel="apple-touch-icon" sizes="205x154" href="favicon.png">
-    <link rel="shortcut icon" type="image/png" href="favicon.png">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
 
-       
-<div class="audio-player">
-  <audio id="myAudio" controls>
-    <source src="data.mp3" type="audio/mpeg">
-    Your browser does not support the audio element.
-  </audio>
-  <div class="controls">
-    <button type="button" onclick="rewindAudio()">⏪ 10s</button>
-    <button type="button" onclick="fastForwardAudio()">⏩ 10s</button>
+  <div class="background-blobs">
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="blob blob-3"></div>
   </div>
-</div>
 
-  <header>
-    <h1>Nightly Eye Repair Routine: 3 Simple Steps</h1>
-    <p>This simple ritual supports the repair, hydration, and protection of your eyes while you sleep. The key is consistency and timing.</p>
-    <p><strong>Overall Timing:</strong> Consume this combination of foods about 45–60 minutes before bed, preferably after dinner during a quiet moment away from screens.</p>
-  </header>
-
-  <section>
-    <h2>The Three Steps for Nighttime Eye Repair</h2>
-    <table>
-      <thead>
-        <tr>
-          <th>Step</th>
-          <th>Focus & Food</th>
-          <th>Quantity & Preparation</th>
-          <th>Rationale & Benefit</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>1. Open the Road<br><em>(Circulation Support)</em></td>
-          <td>Dried Plums (Prunes)</td>
-          <td>Eat two dried plums. Choose unsweetened plums without preservatives.</td>
-          <td>Dried plums are rich in Vitamin K1, which supports capillary strength behind the eyes. Potassium helps regulate fluid balance, preventing overnight swelling and enabling nutrients to reach the retina.</td>
-        </tr>
-        <tr>
-          <td>2. Add the Shield<br><em>(Protection & Antioxidants)</em></td>
-          <td>Pistachios</td>
-          <td>Eat five to seven nuts. Choose unsalted, raw, or dry-roasted pistachios.</td>
-          <td>Provides antioxidant support and healthy fats that protect delicate eye tissues.</td>
-        </tr>
-        <tr>
-          <td>3. Rebuild and Restore<br><em>(Hydration & Raw Materials)</em></td>
-          <td>Chia Seeds</td>
-          <td>Mix one tablespoon of chia seeds into a small glass of water or almond milk. Let it sit for 20–30 minutes until it forms a soft gel.</td>
-          <td>Soaked chia seeds provide powerful hydration and omega-3 fatty acids, supporting overnight repair and moisture balance.</td>
-        </tr>
-      </tbody>
-    </table>
-  </section>
-
-  <section class="tips">
-    <h2>Easy Consumption Tips</h2>
-    <ul>
-      <li><strong>Combine the Foods:</strong> You can eat them separately or mix all three ingredients (dried plums, pistachios, and soaked chia seeds) into plain yogurt.</li>
-      <li><strong>Enhancements:</strong> Add cinnamon or banana slices for a comforting flavor. Pair with chamomile tea or warm lemon water to signal rest.</li>
-      <li><strong>Alternative Preparation:</strong> Sprinkle dry chia seeds onto a spoon of yogurt if you prefer not to soak them.</li>
-    </ul>
-    <p>Following this nightly ritual supports circulation, protection, and rebuilding — signaling to your body that it’s time to rest and heal.</p>
-  </section>
-  
-    <div style="text-align: center; margin: 40px 0 0 0;">
-        <a href="https://youtu.be/Q-A5rIlzPBI" target="_blank" rel="noopener">
-            Watch the original: Eat These 3 Foods Before Bed to Repair Your Eyes & Vision | Dr. David Sinclair
-        </a>
+  <main class="glass-container">
+    <div class="audio-player">
+      <audio id="myAudio" controls>
+        <source src="data.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+      <div class="controls">
+        <button type="button" onclick="rewindAudio()">⏪ 10s</button>
+        <button type="button" onclick="fastForwardAudio()">⏩ 10s</button>
+      </div>
     </div>
 
+    <header>
+      <h1>Nightly Eye Repair Routine: 3 Simple Steps</h1>
+      <p>This simple ritual supports the repair, hydration, and protection of your eyes while you sleep. The key is
+        consistency and timing.</p>
+      <div class="highlight-box">
+        <p><strong>Overall Timing:</strong> Consume this combination of foods about 45–60 minutes before bed, preferably
+          after dinner during a quiet moment away from screens.</p>
+      </div>
+    </header>
 
+    <section>
+      <h2>The Three Steps for Nighttime Eye Repair</h2>
+      <div class="table-container">
+        <table>
+          <thead>
+            <tr>
+              <th>Step</th>
+              <th>Focus & Food</th>
+              <th>Quantity & Preparation</th>
+              <th>Rationale & Benefit</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td data-label="Step">1. Open the Road<br><em>(Circulation Support)</em></td>
+              <td data-label="Focus & Food">Dried Plums (Prunes)</td>
+              <td data-label="Quantity & Preparation">Eat two dried plums. Choose unsweetened plums without
+                preservatives.</td>
+              <td data-label="Rationale & Benefit">Dried plums are rich in Vitamin K1, which supports capillary strength
+                behind the eyes. Potassium helps regulate fluid balance, preventing overnight swelling and enabling
+                nutrients to reach the retina.</td>
+            </tr>
+            <tr>
+              <td data-label="Step">2. Add the Shield<br><em>(Protection & Antioxidants)</em></td>
+              <td data-label="Focus & Food">Pistachios</td>
+              <td data-label="Quantity & Preparation">Eat five to seven nuts. Choose unsalted, raw, or dry-roasted
+                pistachios.</td>
+              <td data-label="Rationale & Benefit">Provides antioxidant support and healthy fats that protect delicate
+                eye tissues.</td>
+            </tr>
+            <tr>
+              <td data-label="Step">3. Rebuild and Restore<br><em>(Hydration & Raw Materials)</em></td>
+              <td data-label="Focus & Food">Chia Seeds</td>
+              <td data-label="Quantity & Preparation">Mix one tablespoon of chia seeds into a small glass of water or
+                almond milk. Let it sit for 20–30 minutes until it forms a soft gel.</td>
+              <td data-label="Rationale & Benefit">Soaked chia seeds provide powerful hydration and omega-3 fatty acids,
+                supporting overnight repair and moisture balance.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="tips glass-card">
+      <h2>Easy Consumption Tips</h2>
+      <ul>
+        <li><strong>Combine the Foods:</strong> You can eat them separately or mix all three ingredients (dried plums,
+          pistachios, and soaked chia seeds) into plain yogurt.</li>
+        <li><strong>Enhancements:</strong> Add cinnamon or banana slices for a comforting flavor. Pair with chamomile
+          tea or warm lemon water to signal rest.</li>
+        <li><strong>Alternative Preparation:</strong> Sprinkle dry chia seeds onto a spoon of yogurt if you prefer not
+          to soak them.</li>
+        <li><strong>Note:</strong> Following this nightly ritual supports circulation, protection, and rebuilding —
+          signaling to your body that it’s time to rest and heal.</li>
+      </ul>
+    </section>
+
+    <div style="text-align: center; margin: 40px 0 20px 0;">
+      <a href="https://youtu.be/Q-A5rIlzPBI" target="_blank" rel="noopener" class="video-link">
+        Watch the original: Eat These 3 Foods Before Bed to Repair Your Eyes & Vision | Dr. David Sinclair
+      </a>
+    </div>
+  </main>
+
+
+  <script src="audio-controls.js"></script>
 </body>
+
 </html>
-
-
