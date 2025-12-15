@@ -347,3 +347,56 @@ a:hover {
         font-size: 1.4rem;
     }
 }
+
+
+.infographic-image {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.pdf-container {
+    width: 100%;
+    height: 600px;
+    /* Default height */
+    margin: 30px auto;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    border: 1px solid var(--glass-border);
+    background: rgba(255, 255, 255, 0.05);
+    display: none;
+    /* Hidden by default (mobile first) */
+}
+
+@media (min-width: 768px) {
+    .pdf-container {
+        display: block;
+        /* Show on desktop */
+    }
+}
+
+.pdf-embed {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.pdf-mobile-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px auto;
+    padding: 20px;
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    .pdf-mobile-link {
+        display: none;
+        /* Hide button on desktop */
+    }
+}
